@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <owl-carousel-o [options]="customOptions" (change)="getData($event)">
+    <ng-container *ngFor="let slide of carouselData">
+      <ng-template carouselSlide>
+        <p>{{slide.text}}</p>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
